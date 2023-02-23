@@ -1,15 +1,10 @@
 import './App.css';
-import Header from './components/header';
+import User from './components/User';
 
-const name="Oğulcan";
-const sureName="Kırtay";
-const isLoggedIn=false;
 function App(){
   return(
     <>
-     <h1>{isLoggedIn &&  `Welcome`}</h1>
-     <h1>{isLoggedIn ? `Welcome with ?` : 'Log in with ?'}</h1>
-     <h1>{!isLoggedIn &&  `Log in`}</h1>
+  <User name="Oğulcan" sname="Kırtay" age={23} isLogIN={true} ></User>
 
     </>
   );
