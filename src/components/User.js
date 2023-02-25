@@ -1,10 +1,10 @@
-function User(props){
+function User({name,sname,age,isLogIN,friends}){
     return(
       <>
-        <h1>{props.isLogIN? `${props.name } ${props.sname} (${props.age}) ` : 'Giriş Yapılmadı' }</h1>
+        <h1>{isLogIN? `${name } ${sname} (${age}) ` : 'Giriş Yapılmadı' }</h1>
         
-        {props.friends.map((friend,index)=>(
-            <div key={index} > {index}- {friend}</div>
+        {friends.map((friend)=>(
+            <div key={friend.id} > {friend.id}- {friend.name}</div>
         ))}
         </> 
     );
