@@ -15,7 +15,7 @@ const friends=[
 function App(){
   return(
     <>
-  <User name="Oğulcan" sname="Kırtay" age={23} isLogIN={true} friends={friends}></User>
+  <User name="Oğulcan" sname={"Kırtay"} age={23} isLogIN={true} friends={friends}></User>
 
     </>
   );
